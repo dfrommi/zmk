@@ -36,6 +36,33 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        a_umlaut: a_umlaut {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_UMLAUT";
+            bindings = <&a_lower_umlaut>, <&a_upper_umlaut>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    macros {
+        a_lower_umlaut: a_lower_umlaut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(U)>, <&macro_wait_time 5>, <&kp A>;
+
+            label = "A_LOWER_UMLAUT";
+        };
+
+        a_upper_umlaut: a_upper_umlaut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(U)>, <&macro_wait_time 5>, <&kp RS(A)>;
+
+            label = "A_UPPER_UMLAUT";
+        };
     };
 
     keymap {
