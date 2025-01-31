@@ -88,7 +88,7 @@
 &kp TAB        &kp Q                  &kp W  &kp F     &kp P  &kp B        &kp J    &kp L  &kp U        &kp Y       &kp MINUS    &kp BSPC
 &mt LCTRL ESC  &a_umlaut_on_hold 0 A  &kp R  &kp S     &kp T  &kp G        &kp M    &kp N  &kp E        &kp I       &kp O        &kp SQT
 &kp LSHFT      &kp Z                  &kp X  &kp C     &kp D  &kp V        &kp K    &kp H  &comma_semi  &dot_colon  &quest_excl  &kp RSHFT
-                                             &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 3  &kp RALT
+                                             &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
             >;
         };
 
@@ -98,6 +98,15 @@
 &trans  &kp CARET  &kp DOLLAR  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp AT_SIGN    &kp AMPERSAND  &kp LPAR   &kp RPAR   &kp HASH  &kp ASTERISK   &kp GRAVE
 &trans  &trans     &trans      &trans            &kp PERCENT        &trans         &kp PIPE       &kp SLASH  &kp TILDE  &trans    &kp BACKSLASH  &trans
                                &trans            &trans             &trans         &trans         &trans     &trans
+            >;
+        };
+
+        numbers {
+            bindings = <
+&trans  &kp N6  &kp N7   &kp N8     &kp N9  &trans    &trans        &trans    &trans              &kp LG(UP)  &trans     &trans
+&trans  &kp N1  &kp N2   &kp N3     &kp N4  &kp N5    &kp LA(LEFT)  &kp LEFT  &kp DOWN            &kp UP      &kp RIGHT  &kp LA(RIGHT)
+&trans  &trans  &kp DOT  &kp COMMA  &kp N0  &trans    &trans        &trans    &kp LG(DOWN_ARROW)  &trans      &trans     &trans
+                         &trans     &trans  &trans    &trans        &trans    &trans
             >;
         };
 
@@ -128,6 +137,15 @@
 &kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
                              &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+            >;
+        };
+
+        nav {
+            bindings = <
+&trans  &trans                     &trans  &trans                 &trans                 &trans    &trans         &trans                &trans                    &trans                     &trans                 &trans
+&trans  &kp LS(LA(LC(LG(SPACE))))  &trans  &kp LS(LG(LA(LC(S))))  &kp LG(LS(LA(LC(T))))  &trans    &kp LG(SPACE)  &kp LG(LEFT_BRACKET)  &kp LG(LS(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &kp LG(RIGHT_BRACKET)  &trans
+&trans  &trans                     &trans  &trans                 &trans                 &trans    &trans         &trans                &trans                    &trans                     &trans                 &trans
+                                           &trans                 &trans                 &trans    &trans         &trans                &trans
             >;
         };
     };
