@@ -40,7 +40,7 @@
         a_umlaut: a_umlaut {
             compatible = "zmk,behavior-mod-morph";
             label = "A_UMLAUT";
-            bindings = <&a_lower_umlaut>, <&a_upper_umlaut>;
+            bindings = <&a_lower_umlaut>, <&o_upper_umlaut>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -53,6 +53,62 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <250>;
+        };
+
+        o_umlaut: o_umlaut {
+            compatible = "zmk,behavior-mod-morph";
+            label = "O_UMLAUT";
+            bindings = <&o_lower_umlaut>, <&o_upper_umlaut>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        o_umlaut_on_hold: o_umlaut_on_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "O_UMLAUT_ON_HOLD";
+            bindings = <&o_umlaut>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+        };
+
+        u_umlaut: u_umlaut {
+            compatible = "zmk,behavior-mod-morph";
+            label = "U_UMLAUT";
+            bindings = <&u_lower_umlaut>, <&u_upper_umlaut>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        u_umlaut_on_hold: u_umlaut_on_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "U_UMLAUT_ON_HOLD";
+            bindings = <&u_umlaut>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+        };
+
+        euro_on_hold: euro_on_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "EURO_ON_HOLD";
+            bindings = <&euro>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "tap-preferred";
+        };
+
+        s_zett_on_hold: s_zett_on_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "S_ZETT_ON_HOLD";
+            bindings = <&s_zett>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -72,6 +128,52 @@
 
             label = "A_UPPER_UMLAUT";
         };
+
+        o_lower_umlaut: o_lower_umlaut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(U)>, <&macro_wait_time 5>, <&kp O>;
+
+            label = "O_LOWER_UMLAUT";
+        };
+
+        o_upper_umlaut: o_upper_umlaut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(U)>, <&macro_wait_time 5>, <&kp RS(O)>;
+
+            label = "O_UPPER_UMLAUT";
+        };
+
+        u_lower_umlaut: u_lower_umlau {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(U)>, <&macro_wait_time 5>, <&kp U>;
+
+            label = "U_LOWER_UMLAU";
+        };
+
+        u_upper_umlaut: u_upper_umlaut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(U)>, <&macro_wait_time 5>, <&kp RS(U)>;
+
+            label = "U_UPPER_UMLAUT";
+        };
+
+        euro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(AT)>;
+            label = "NEW_MACRO";
+        };
+
+        s_zett: s_zett {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(S)>;
+            label = "S_ZETT";
+        };
     };
 
     keymap {
@@ -85,10 +187,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB        &kp Q                  &kp W  &kp F     &kp P  &kp B          &kp J    &kp L  &kp U        &kp Y       &kp MINUS    &kp BSPC
-&mt LCTRL ESC  &a_umlaut_on_hold 0 A  &kp R  &kp S     &kp T  &kp G          &kp M    &kp N  &kp E        &kp I       &kp O        &kp SQT
-&kp LSHFT      &kp Z                  &kp X  &kp C     &kp D  &kp V          &kp K    &kp H  &comma_semi  &dot_colon  &quest_excl  &kp RSHFT
-                                             &kp LGUI  &mo 1  &lt 3 SPACE    &kp RET  &mo 2  &kp RALT
+&kp TAB        &kp Q                  &kp W  &kp F                &kp P  &kp B          &kp J    &kp L  &o_umlaut_on_hold 0 U  &kp Y       &kp MINUS              &kp BSPC
+&mt LCTRL ESC  &a_umlaut_on_hold 0 A  &kp R  &s_zett_on_hold 0 S  &kp T  &kp G          &kp M    &kp N  &euro_on_hold 0 E      &kp I       &o_umlaut_on_hold 0 O  &kp SQT
+&kp LSHFT      &kp Z                  &kp X  &kp C                &kp D  &kp V          &kp K    &kp H  &comma_semi            &dot_colon  &quest_excl            &kp RSHFT
+                                             &kp LGUI             &mo 1  &lt 3 SPACE    &kp RET  &mo 2  &kp RALT
             >;
         };
 
