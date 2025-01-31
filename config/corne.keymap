@@ -88,7 +88,16 @@
 &kp TAB        &kp Q                  &kp W  &kp F     &kp P  &kp B        &kp J    &kp L  &kp U        &kp Y       &kp MINUS    &kp BSPC
 &mt LCTRL ESC  &a_umlaut_on_hold 0 A  &kp R  &kp S     &kp T  &kp G        &kp M    &kp N  &kp E        &kp I       &kp O        &kp SQT
 &kp LSHFT      &kp Z                  &kp X  &kp C     &kp D  &kp V        &kp K    &kp H  &comma_semi  &dot_colon  &quest_excl  &kp RSHFT
-                                             &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
+                                             &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 3  &kp RALT
+            >;
+        };
+
+        symbols {
+            bindings = <
+&trans  &trans     &trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans         &kp LT     &kp GT     &kp PLUS  &kp EQUAL      &trans
+&trans  &kp CARET  &kp DOLLAR  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp AT_SIGN    &kp AMPERSAND  &kp LPAR   &kp RPAR   &kp HASH  &kp ASTERISK   &kp GRAVE
+&trans  &trans     &trans      &trans            &kp PERCENT        &trans         &kp PIPE       &kp SLASH  &kp TILDE  &trans    &kp BACKSLASH  &trans
+                               &trans            &trans             &trans         &trans         &trans     &trans
             >;
         };
 
