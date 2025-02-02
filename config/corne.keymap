@@ -119,6 +119,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        td_shift: td_shift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SHIFT";
+            #binding-cells = <0>;
+            bindings = <&kp LSHIFT>, <&caps_word>;
+        };
     };
 
     macros {
@@ -199,7 +206,7 @@
 &kp LALT       &kp Q                  &kp W  &kp F                &kp P      &kp B          &kp J    &kp L  &u_umlaut_on_hold 0 U  &kp Y       &kp MINUS               &none
 &mt LCTRL ESC  &a_umlaut_on_hold 0 A  &kp R  &s_zett_on_hold 0 S  &kp T      &kp G          &kp M    &kp N  &euro_on_hold 0 E      &kp I       &o_umlaut_on_hold 0 O   &kp SQT
 &kp LGUI       &mt LSHIFT Z           &kp X  &kp C                &kp D      &kp V          &kp K    &kp H  &comma_semi            &dot_colon  &th_quest_excl RSHFT 0  &none
-                                             &kp LSHFT            &lt 1 TAB  &lt 3 SPACE    &kp RET  &mo 2  &mt RSHFT BACKSPACE
+                                             &td_shift            &lt 1 TAB  &lt 3 SPACE    &kp RET  &mo 2  &mt RSHFT BACKSPACE
             >;
         };
 
