@@ -230,10 +230,10 @@
 
         nav {
             bindings = <
-&trans  &trans                     &trans  &trans                 &trans                 &trans    &trans         &trans                &trans                    &trans                     &trans                 &trans
-&trans  &kp LS(LA(LC(LG(SPACE))))  &trans  &kp LS(LG(LA(LC(S))))  &kp LG(LS(LA(LC(T))))  &trans    &kp LG(SPACE)  &kp LG(LEFT_BRACKET)  &kp LG(LS(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &kp LG(RIGHT_BRACKET)  &trans
-&trans  &trans                     &trans  &trans                 &trans                 &trans    &trans         &trans                &trans                    &trans                     &trans                 &trans
-                                           &trans                 &trans                 &trans    &trans         &trans                &trans
+&bt BT_SEL 0  &trans                     &trans  &trans                 &trans                 &trans    &trans         &trans                &trans                    &trans                     &trans                 &bt BT_SEL 1
+&trans        &kp LS(LA(LC(LG(SPACE))))  &trans  &kp LS(LG(LA(LC(S))))  &kp LG(LS(LA(LC(T))))  &trans    &kp LG(SPACE)  &kp LG(LEFT_BRACKET)  &kp LG(LS(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &kp LG(RIGHT_BRACKET)  &trans
+&trans        &trans                     &trans  &trans                 &trans                 &trans    &trans         &trans                &trans                    &trans                     &trans                 &trans
+                                                 &trans                 &trans                 &trans    &trans         &trans                &trans
             >;
         };
 
