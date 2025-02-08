@@ -203,10 +203,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp LALT       &kp Q                  &kp W  &kp F                &kp P      &kp B          &kp J    &kp L  &u_umlaut_on_hold 0 U  &kp Y       &kp MINUS               &none
-&mt LCTRL ESC  &a_umlaut_on_hold 0 A  &kp R  &s_zett_on_hold 0 S  &kp T      &kp G          &kp M    &kp N  &euro_on_hold 0 E      &kp I       &o_umlaut_on_hold 0 O   &kp SQT
-&kp LGUI       &mt LSHIFT Z           &kp X  &kp C                &kp D      &kp V          &kp K    &kp H  &comma_semi            &dot_colon  &th_quest_excl RSHFT 0  &none
-                                             &td_shift            &lt 1 TAB  &lt 3 SPACE    &kp RET  &mo 2  &mt RSHFT BACKSPACE
+&kp LALT  &kp Q                  &kp W  &kp F                &kp P  &kp B          &kp J    &kp L  &u_umlaut_on_hold 0 U  &kp Y       &kp MINUS               &none
+&none     &a_umlaut_on_hold 0 A  &kp R  &s_zett_on_hold 0 S  &kp T  &kp G          &kp M    &kp N  &euro_on_hold 0 E      &kp I       &o_umlaut_on_hold 0 O   &kp SQT
+&kp LGUI  &mt LSHIFT Z           &kp X  &kp C                &kp D  &kp V          &kp K    &kp H  &comma_semi            &dot_colon  &th_quest_excl RSHFT 0  &none
+                                        &mt LCTRL ESC        &mo 1  &lt 3 SPACE    &kp RET  &mo 2  &kp BACKSPACE
             >;
         };
 
@@ -221,10 +221,10 @@
 
         numbers {
             bindings = <
-&trans  &kp N6  &kp N7   &kp N8     &kp N9  &trans    &trans        &trans    &trans              &kp LG(UP)  &trans     &trans
-&trans  &kp N1  &kp N2   &kp N3     &kp N4  &kp N5    &kp LA(LEFT)  &kp LEFT  &kp DOWN            &kp UP      &kp RIGHT  &kp LA(RIGHT)
-&trans  &trans  &kp DOT  &kp COMMA  &kp N0  &trans    &trans        &trans    &kp LG(DOWN_ARROW)  &trans      &trans     &trans
-                         &trans     &trans  &trans    &trans        &trans    &trans
+&trans  &kp N6  &kp N7   &kp N8     &kp N9       &trans     &trans        &trans    &trans              &kp LG(UP)  &trans     &trans
+&trans  &kp N1  &kp N2   &kp N3     &kp N4       &kp N5     &kp LA(LEFT)  &kp LEFT  &kp DOWN            &kp UP      &kp RIGHT  &kp LA(RIGHT)
+&trans  &trans  &kp DOT  &kp COMMA  &kp N0       &trans     &trans        &trans    &kp LG(DOWN_ARROW)  &trans      &trans     &trans
+                         &trans     &kp LS(TAB)  &kp TAB    &trans        &trans    &trans
             >;
         };
 
