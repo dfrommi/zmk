@@ -213,27 +213,27 @@
         symbols {
             bindings = <
 &trans  &trans     &trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans         &kp LT     &kp GT      &kp PLUS  &kp EQUAL      &trans
-&trans  &kp CARET  &kp DOLLAR  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp AT_SIGN    &kp AMPERSAND  &kp LPAR   &kp RPAR    &kp HASH  &kp ASTERISK   &kp GRAVE
-&trans  &trans     &trans      &trans            &kp PERCENT        &trans         &kp PIPE       &kp SLASH  &kp TILDE   &trans    &kp BACKSLASH  &trans
+&trans  &kp CARET  &kp DOLLAR  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp AT_SIGN    &kp AMPERSAND  &kp LPAR   &kp RPAR    &kp HASH  &kp ASTERISK   &none
+&trans  &trans     &trans      &trans            &kp PERCENT        &trans         &kp PIPE       &kp SLASH  &kp TILDE   &kp DOT   &kp BACKSLASH  &trans
                                &trans            &trans             &trans         &trans         &trans     &kp DELETE
             >;
         };
 
         numbers {
             bindings = <
-&trans  &kp N6  &kp N7   &kp N8     &kp N9       &trans     &trans        &trans    &trans              &kp LG(UP)  &trans     &trans
-&trans  &kp N1  &kp N2   &kp N3     &kp N4       &kp N5     &kp LA(LEFT)  &kp LEFT  &kp DOWN            &kp UP      &kp RIGHT  &kp LA(RIGHT)
-&trans  &trans  &kp DOT  &kp COMMA  &kp N0       &trans     &trans        &trans    &kp LG(DOWN_ARROW)  &trans      &trans     &trans
-                         &trans     &kp LS(TAB)  &kp TAB    &trans        &trans    &trans
+&none  &none           &kp GRAVE          &kp EXCLAMATION  &kp QUESTION  &none     &none   &kp N6  &kp N7  &kp N8  &kp N9  &none
+&none  &kp MINUS       &kp SINGLE_QUOTE   &kp COMMA        &kp DOT       &none     &kp N0  &kp N1  &kp N2  &kp N3  &kp N4  &none
+&none  &kp UNDERSCORE  &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp COLON     &none     &none   &kp N5  &none   &none   &none   &none
+                                          &kp LS(TAB)      &kp TAB       &kp N0    &none   &none   &none
             >;
         };
 
         nav {
             bindings = <
-&bt BT_SEL 0  &trans                     &trans  &trans                 &trans                 &trans    &trans         &trans                &trans                    &trans                     &trans                 &bt BT_SEL 1
-&trans        &kp LS(LA(LC(LG(SPACE))))  &trans  &kp LS(LG(LA(LC(S))))  &kp LG(LS(LA(LC(T))))  &trans    &kp LG(SPACE)  &kp LG(LEFT_BRACKET)  &kp LG(LS(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &kp LG(RIGHT_BRACKET)  &trans
-&trans        &trans                     &trans  &trans                 &trans                 &trans    &trans         &trans                &trans                    &trans                     &trans                 &trans
-                                                 &trans                 &trans                 &trans    &trans         &trans                &trans
+&none  &none                          &kp LG(LC(LA(LEFT_ARROW)))  &kp LG(LC(LA(RIGHT)))      &none                  &none    &none                  &none                  &none                      &kp LG(UP)    &none          &none
+&none  &kp LG(LEFT_BRACKET)           &kp LG(LS(LEFT_BRACKET))    &kp LG(LS(RIGHT_BRACKET))  &kp LG(RIGHT_BRACKET)  &none    &none                  &kp LEFT               &kp DOWN_ARROW             &kp UP_ARROW  &kp RIGHT      &none
+&none  &kp LG(LC(LA(LS(BACKSLASH))))  &none                       &none                      &none                  &none    &none                  &kp LA(LEFT_ARROW)     &kp LG(DOWN)               &none         &kp LA(RIGHT)  &none
+                                                                  &none                      &none                  &none    &kp LG(LC(LA(LS(T))))  &kp LG(LC(LA(LS(S))))  &kp LG(LC(LA(LS(SPACE))))
             >;
         };
 
