@@ -11,13 +11,13 @@
 / {
     behaviors {
         as_ht: autoshift_hold_tap {
-          compatible = "zmk,behavior-hold-tap";
-          label = "AUTOSHIFT_HOLD_TAP";
-          #binding-cells = <2>;
-          tapping-term-ms = <200>;
-          bindings = <&shifted>, <&kp>;
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTOSHIFT_HOLD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&shifted>, <&kp>;
         };
-        
+
         quest_excl: quest_excl {
             compatible = "zmk,behavior-mod-morph";
             label = "QUEST_EXCL";
@@ -138,29 +138,28 @@
 
     macros {
         shifted: macro_shifted_kp {
-          #binding-cells = <1>;
-          label = "MACRO_SHIFTED_KP";
-          compatible = "zmk,behavior-macro-one-param";
-          bindings =
-            <&macro_press &kp LSHFT>,
-            <&macro_param_1to1 &macro_tap &kp MACRO_PLACEHOLDER>,
-            <&macro_release &kp LSHFT>;
+            #binding-cells = <1>;
+            label = "MACRO_SHIFTED_KP";
+            compatible = "zmk,behavior-macro-one-param";
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT &macro_param_1to1>,
+                <&macro_tap>,
+                <&kp MACRO_PLACEHOLDER>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
 
         as: autoshift {
-          compatible = "zmk,behavior-macro-one-param";
-          #binding-cells = <1>;
-          label = "AUTOSHIFT_KP";
-          bindings =
-            <&macro_press>,
-            <&macro_param_1to1>,
-            <&macro_param_1to2>,
-            <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
-            <&macro_pause_for_release>,
-            <&macro_release>,
-            <&macro_param_1to1>,
-            <&macro_param_1to2>,
-            <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            label = "AUTOSHIFT_KP";
+            bindings =
+                <&macro_press>,
+                <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
         };
 
         a_lower_umlaut: a_lower_umlaut {
@@ -234,7 +233,7 @@
 &none  &as Q  &as W  &as F          &as P  &as B          &as J      &as L  &as U          &as Y      &s_zett    &none
 &none  &as A  &as R  &as S          &as T  &as G          &as M      &as N  &as E          &as I      &as O      &none
 &none  &as Z  &as X  &as C          &as D  &as V          &as K      &as H  &a_umlaut      &u_umlaut  &o_umlaut  &none
-                     &mt LCTRL ESC  &mo 2  &lt 3 SPACE    &lt 4 RET  &mo 1  &kp BACKSPACE
+                     &mt LCTRL ESC  &mo 3  &lt 2 SPACE    &lt 1 RET  &mo 4  &kp BACKSPACE
             >;
         };
 
