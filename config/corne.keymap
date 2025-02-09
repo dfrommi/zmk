@@ -10,6 +10,14 @@
 
 / {
     behaviors {
+        as_ht: autoshift_hold_tap {
+          compatible = "zmk,behavior-hold-tap";
+          label = "AUTOSHIFT_HOLD_TAP";
+          #binding-cells = <2>;
+          tapping-term-ms = <200>;
+          bindings = <&shifted>, <&kp>;
+        };
+        
         quest_excl: quest_excl {
             compatible = "zmk,behavior-mod-morph";
             label = "QUEST_EXCL";
@@ -129,6 +137,32 @@
     };
 
     macros {
+        shifted: macro_shifted_kp {
+          #binding-cells = <1>;
+          label = "MACRO_SHIFTED_KP";
+          compatible = "zmk,behavior-macro-one-param";
+          bindings =
+            <&macro_press &kp LSHFT>,
+            <&macro_param_1to1 &macro_tap &kp MACRO_PLACEHOLDER>,
+            <&macro_release &kp LSHFT>;
+        };
+
+        as: autoshift {
+          compatible = "zmk,behavior-macro-one-param";
+          #binding-cells = <1>;
+          label = "AUTOSHIFT_KP";
+          bindings =
+            <&macro_press>,
+            <&macro_param_1to1>,
+            <&macro_param_1to2>,
+            <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
+            <&macro_pause_for_release>,
+            <&macro_release>,
+            <&macro_param_1to1>,
+            <&macro_param_1to2>,
+            <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
+        };
+
         a_lower_umlaut: a_lower_umlaut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -196,16 +230,10 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
             bindings = <
-&none  &kp Q  &kp W  &kp F          &kp P  &kp B          &kp J      &kp L  &kp U          &kp Y      &s_zett    &none
-&none  &kp A  &kp R  &kp S          &kp T  &kp G          &kp M      &kp N  &kp E          &kp I      &kp O      &none
-&none  &kp Z  &kp X  &kp C          &kp D  &kp V          &kp K      &kp H  &a_umlaut      &u_umlaut  &o_umlaut  &none
+&none  &as Q  &as W  &as F          &as P  &as B          &as J      &as L  &as U          &as Y      &s_zett    &none
+&none  &as A  &as R  &as S          &as T  &as G          &as M      &as N  &as E          &as I      &as O      &none
+&none  &as Z  &as X  &as C          &as D  &as V          &as K      &as H  &a_umlaut      &u_umlaut  &o_umlaut  &none
                      &mt LCTRL ESC  &mo 2  &lt 3 SPACE    &lt 4 RET  &mo 1  &kp BACKSPACE
             >;
         };
