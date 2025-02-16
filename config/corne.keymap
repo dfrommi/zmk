@@ -237,7 +237,7 @@
             bindings = <
 &kp LALT   &as Q  &as W  &as F          &as P      &a_umlaut      &u_umlaut  &as L      &as U                    &as Y  &s_zett    &kp RALT
 &kp LGUI   &as A  &as R  &as S          &as T      &as G          &as M      &as N      &as E                    &as I  &as O      &kp RGUI
-&kp LSHFT  &as Z  &as X  &as C          &as D      &as V          &as K      &as H      &kp J                    &kp B  &o_umlaut  &kp RSHFT
+&kp LSHFT  &as Z  &as X  &as C          &as D      &as V          &as K      &as H      &as J                    &as B  &o_umlaut  &kp RSHFT
                          &mt LCTRL ESC  &lt 3 TAB  &lt 2 SPACE    &lt 1 RET  &lt 4 DEL  &mt BACKSPACE RIGHT_GUI
             >;
         };
