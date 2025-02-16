@@ -13,8 +13,10 @@
             compatible = "zmk,behavior-hold-tap";
             label = "AUTOSHIFT_HOLD_TAP";
             #binding-cells = <2>;
-            tapping-term-ms = <350>;
+            tapping-term-ms = <200>;
             bindings = <&shifted>, <&kp>;
+
+            flavor = "tap-preferred";
         };
 
         a_umlaut_mm: a_umlaut_mm {
@@ -105,6 +107,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            flavor = "tap-preferred";
         };
 
         my_lt: my_lt {
@@ -114,6 +117,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            flavor = "tap-preferred";
         };
 
         a_umlaut: a_umlaut {
