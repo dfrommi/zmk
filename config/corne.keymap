@@ -17,27 +17,27 @@
             bindings = <&shifted>, <&kp>;
         };
 
-        a_umlaut: a_umlaut {
+        a_umlaut_mm: a_umlaut_mm {
             compatible = "zmk,behavior-mod-morph";
-            label = "A_UMLAUT";
+            label = "A_UMLAUT_MM";
             bindings = <&a_lower_umlaut>, <&o_upper_umlaut>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        o_umlaut: o_umlaut {
+        o_umlaut_mm: o_umlaut_mm {
             compatible = "zmk,behavior-mod-morph";
-            label = "O_UMLAUT";
+            label = "O_UMLAUT_MM";
             bindings = <&o_lower_umlaut>, <&o_upper_umlaut>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        u_umlaut: u_umlaut {
+        u_umlaut_mm: u_umlaut_mm {
             compatible = "zmk,behavior-mod-morph";
-            label = "U_UMLAUT";
+            label = "U_UMLAUT_MM";
             bindings = <&u_lower_umlaut>, <&u_upper_umlaut>;
 
             #binding-cells = <0>;
@@ -93,6 +93,51 @@
             compatible = "zmk,behavior-hold-tap";
             label = "TH_BRACES";
             bindings = <&braces>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        my_mt: my_mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MY_MT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        my_lt: my_lt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MY_LT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        a_umlaut: a_umlaut {
+            compatible = "zmk,behavior-hold-tap";
+            label = "A_UMLAUT";
+            bindings = <&a_upper_umlaut>, <&a_lower_umlaut>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        u_umlaut: u_umlaut {
+            compatible = "zmk,behavior-hold-tap";
+            label = "U_UMLAUT";
+            bindings = <&u_upper_umlaut>, <&u_lower_umlaut>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        o_umlaut: o_umlaut {
+            compatible = "zmk,behavior-hold-tap";
+            label = "O_UMLAUT";
+            bindings = <&o_upper_umlaut>, <&o_lower_umlaut>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -235,10 +280,10 @@
 
         default_layer {
             bindings = <
-&kp LALT   &as Q  &as W  &as F          &as P      &a_umlaut      &u_umlaut  &as L      &as U                    &as Y  &s_zett    &kp RALT
-&kp LGUI   &as A  &as R  &as S          &as T      &as G          &as M      &as N      &as E                    &as I  &as O      &kp RGUI
-&kp LSHFT  &as Z  &as X  &as C          &as D      &as V          &as K      &as H      &as J                    &as B  &o_umlaut  &kp RSHFT
-                         &mt LCTRL ESC  &lt 3 TAB  &lt 2 SPACE    &lt 1 RET  &lt 4 DEL  &mt BACKSPACE RIGHT_GUI
+&kp LALT   &as Q  &as W  &as F             &as P         &a_umlaut 0 0     &u_umlaut 0 0  &as L         &as U                  &as Y  &s_zett        &kp RALT
+&kp LGUI   &as A  &as R  &as S             &as T         &as G             &as M          &as N         &as E                  &as I  &as O          &kp RGUI
+&kp LSHFT  &as Z  &as X  &as C             &as D         &as V             &as K          &as H         &as J                  &as B  &o_umlaut 0 0  &kp RSHFT
+                         &my_mt ESC LCTRL  &my_lt 3 TAB  &my_lt 2 SPACE    &my_lt 1 RET   &my_lt 4 DEL  &my_mt RGUI BACKSPACE
             >;
         };
 
