@@ -43,6 +43,60 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        th_thin_arrow: th_thin_arrow {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TH_THIN_ARROW";
+            bindings = <&thin_arrow>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        th_fat_arrow: th_fat_arrow {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TH_FAT_ARROW";
+            bindings = <&fat_arrow>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        th_brackets: th_brackets {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TH_BRACKETS";
+            bindings = <&brackets>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        th_paren: th_paren {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TH_PAREN";
+            bindings = <&paren>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        th_square_brackets: th_square_brackets {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TH_SQUARE_BRACKETS";
+            bindings = <&square_brackets>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        th_braces: th_braces {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TH_BRACES";
+            bindings = <&braces>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     macros {
@@ -146,6 +200,34 @@
             bindings = <&kp EQUAL &kp GT>;
             label = "FAT_ARROW";
         };
+
+        brackets: brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp GT &kp LEFT>;
+            label = "BRACKETS";
+        };
+
+        paren: paren {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR &kp LEFT>;
+            label = "PAREN";
+        };
+
+        square_brackets: square_brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp RIGHT_BRACKET &kp LEFT_ARROW>;
+            label = "SQUARE_BRACKETS";
+        };
+
+        braces: braces {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RET &kp RET &kp RIGHT_BRACE &kp UP>;
+            label = "BRACES";
+        };
     };
 
     keymap {
@@ -171,10 +253,10 @@
 
         symbols {
             bindings = <
-&none  &none      &kp PERCENT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none            &none   &kp LT         &kp GT      &kp EQUAL  &none         &none
-&none  &kp CARET  &kp DOLLAR   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp BACKSLASH    &kp AT  &kp LPAR       &kp RPAR    &kp HASH   &kp ASTERISK  &none
-&none  &none      &none        &kp TILDE         &kp PIPE           &none            &none   &kp AMPERSAND  &kp PLUS    &none      &none         &none
-                               &none             &none              &none            &none   &none          &kp DELETE
+&none  &none      &kp PERCENT  &th_square_brackets 0 LEFT_BRACKET  &kp RIGHT_BRACKET  &none            &none   &th_brackets 0 LT             &th_thin_arrow 0 GT  &th_fat_arrow 0 EQUAL  &none         &none
+&none  &kp CARET  &kp DOLLAR   &th_braces 0 LEFT_BRACE             &kp RIGHT_BRACE    &kp BACKSLASH    &kp AT  &th_paren 0 LEFT_PARENTHESIS  &kp RPAR             &kp HASH               &kp ASTERISK  &none
+&none  &none      &none        &kp TILDE                           &kp PIPE           &none            &none   &kp AMPERSAND                 &kp PLUS             &none                  &none         &none
+                               &none                               &none              &none            &none   &none                         &none
             >;
         };
 
