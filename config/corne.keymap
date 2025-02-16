@@ -17,33 +17,6 @@
             bindings = <&shifted>, <&kp>;
         };
 
-        quest_excl: quest_excl {
-            compatible = "zmk,behavior-mod-morph";
-            label = "QUEST_EXCL";
-            bindings = <&kp LS(QUESTION)>, <&kp EXCLAMATION>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        dot_colon: dot_colon {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOT_COLON";
-            bindings = <&kp DOT>, <&kp COLON>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        comma_semi: comma_semi {
-            compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_SEMI";
-            bindings = <&kp COMMA>, <&kp SEMICOLON>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         a_umlaut: a_umlaut {
             compatible = "zmk,behavior-mod-morph";
             label = "A_UMLAUT";
@@ -51,15 +24,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        a_umlaut_on_hold: a_umlaut_on_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "A_UMLAUT_ON_HOLD";
-            bindings = <&a_umlaut>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
         };
 
         o_umlaut: o_umlaut {
@@ -71,15 +35,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        o_umlaut_on_hold: o_umlaut_on_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "O_UMLAUT_ON_HOLD";
-            bindings = <&o_umlaut>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-        };
-
         u_umlaut: u_umlaut {
             compatible = "zmk,behavior-mod-morph";
             label = "U_UMLAUT";
@@ -87,51 +42,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        u_umlaut_on_hold: u_umlaut_on_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "U_UMLAUT_ON_HOLD";
-            bindings = <&u_umlaut>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-        };
-
-        euro_on_hold: euro_on_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "EURO_ON_HOLD";
-            bindings = <&euro>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "tap-preferred";
-        };
-
-        s_zett_on_hold: s_zett_on_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "S_ZETT_ON_HOLD";
-            bindings = <&s_zett>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "tap-preferred";
-        };
-
-        th_quest_excl: th_quest_excl {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TH_QUEST_EXCL";
-            bindings = <&kp>, <&quest_excl>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        td_shift: td_shift {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_SHIFT";
-            #binding-cells = <0>;
-            bindings = <&kp LSHIFT>, <&caps_word>;
         };
     };
 
@@ -221,6 +131,20 @@
             #binding-cells = <0>;
             bindings = <&kp RA(S)>;
             label = "S_ZETT";
+        };
+
+        thin_arrow: thin_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT>;
+            label = "THIN_ARROW";
+        };
+
+        fat_arrow: fat_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
+            label = "FAT_ARROW";
         };
     };
 
