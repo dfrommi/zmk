@@ -288,7 +288,7 @@
 &kp LALT   &as Q  &as W  &as F             &as P         &a_umlaut 0 0     &u_umlaut 0 0  &as L         &as U                  &as Y  &s_zett        &kp RALT
 &kp LGUI   &as A  &as R  &as S             &as T         &as G             &as M          &as N         &as E                  &as I  &as O          &kp RGUI
 &kp LSHFT  &as Z  &as X  &as C             &as D         &as V             &as K          &as H         &as J                  &as B  &o_umlaut 0 0  &kp RSHFT
-                         &my_mt ESC LCTRL  &my_lt 3 TAB  &my_lt 2 SPACE    &my_lt 1 RET   &my_lt 4 DEL  &my_mt RGUI BACKSPACE
+                         &my_mt LCTRL ESC  &my_lt 3 TAB  &my_lt 2 SPACE    &my_lt 1 RET   &my_lt 4 DEL  &my_mt RGUI BACKSPACE
             >;
         };
 
