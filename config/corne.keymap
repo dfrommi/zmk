@@ -285,10 +285,10 @@
 
         default_layer {
             bindings = <
-&kp LALT   &as Q  &as W  &as F             &as P         &a_umlaut 0 0     &u_umlaut 0 0  &as L         &as U                  &as Y  &s_zett        &kp RALT
-&kp LGUI   &as A  &as R  &as S             &as T         &as G             &as M          &as N         &as E                  &as I  &as O          &kp RGUI
-&kp LSHFT  &as Z  &as X  &as C             &as D         &as V             &as K          &as H         &as J                  &as B  &o_umlaut 0 0  &kp RSHFT
-                         &my_mt LCTRL ESC  &my_lt 3 TAB  &my_lt 2 SPACE    &my_lt 1 RET   &my_lt 4 DEL  &my_mt RGUI BACKSPACE
+&kp LALT   &as Q  &as W  &as F             &as P         &a_umlaut 0 0     &u_umlaut 0 0  &as L         &as U                  &as Y  &s_zett        &none
+&kp LSHFT  &as A  &as R  &as S             &as T         &as G             &as M          &as N         &as E                  &as I  &as O          &kp RIGHT_SHIFT
+&kp LCMD   &as Z  &as X  &as C             &as D         &as V             &as K          &as H         &as J                  &as B  &o_umlaut 0 0  &none
+                         &my_mt LCTRL ESC  &my_lt 4 TAB  &my_lt 2 SPACE    &my_lt 1 RET   &my_lt 3 DEL  &my_mt RGUI BACKSPACE
             >;
         };
 
@@ -310,21 +310,21 @@
             >;
         };
 
-        nav {
+        button {
             bindings = <
-&bt BT_SEL 0  &kp LG(LC(LA(LS(BACKSLASH))))  &none         &kp C_BRI_DN                       &kp C_BRI_UP                            &none       &none                  &kp LG(L)              &kp LG(T)                  &kp LG(LS(T))              &kp LG(W)              &bt BT_SEL 1
-&none         &kp C_PREV                     &kp C_VOL_DN  &kp C_VOL_UP                       &kp C_NEXT                              &kp C_PP    &none                  &kp LG(LEFT_BRACKET)   &kp LG(LS(LEFT_BRACKET))   &kp LG(LS(RIGHT_BRACKET))  &kp LG(RIGHT_BRACKET)  &none
-&none         &none                          &none         &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &none       &none                  &none                  &kp LG(LC(LA(LEFT)))       &kp LG(LC(LA(RIGHT)))      &none                  &none
-                                                           &none                              &none                                   &none       &kp LG(LC(LA(LS(T))))  &kp LG(LC(LA(LS(S))))  &kp LG(LC(LA(LS(SPACE))))
+&none  &none  &none  &none  &none  &none    &none  &none               &none           &kp LG(UP)    &none          &none
+&none  &none  &none  &none  &none  &none    &none  &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &none
+&none  &none  &none  &none  &none  &none    &none  &kp LA(LEFT_ARROW)  &kp LG(DOWN)    &none         &kp LA(RIGHT)  &none
+                     &none  &none  &none    &none  &none               &none
             >;
         };
 
-        button {
+        nav {
             bindings = <
-&none  &none      &none         &none         &none           &none         &none  &none               &none           &kp LG(UP)    &none          &none
-&none  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &caps_word    &none  &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &none
-&none  &kp LG(Z)  &kp LG(X)     &kp LG(C)     &kp LG(D)       &kp LG(V)     &none  &kp LA(LEFT_ARROW)  &kp LG(DOWN)    &none         &kp LA(RIGHT)  &none
-                                &none         &none           &none         &none  &none               &none
+&bt BT_SEL 0  &kp LG(LC(LA(LS(BACKSLASH))))  &none         &kp C_BRI_DN                       &kp C_BRI_UP                            &none       &none                  &kp LG(L)              &kp LG(T)                  &kp LG(LS(T))              &kp LG(W)              &none
+&bt BT_SEL 1  &kp C_PREV                     &kp C_VOL_DN  &kp C_VOL_UP                       &kp C_NEXT                              &kp C_PP    &none                  &kp LG(LEFT_BRACKET)   &kp LG(LS(LEFT_BRACKET))   &kp LG(LS(RIGHT_BRACKET))  &kp LG(RIGHT_BRACKET)  &none
+&none         &none                          &none         &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &none       &none                  &none                  &kp LG(LC(LA(LEFT)))       &kp LG(LC(LA(RIGHT)))      &none                  &none
+                                                           &none                              &none                                   &none       &kp LG(LC(LA(LS(T))))  &kp LG(LC(LA(LS(S))))  &kp LG(LC(LA(LS(SPACE))))
             >;
         };
 
