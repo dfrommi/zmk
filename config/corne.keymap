@@ -319,12 +319,21 @@
             >;
         };
 
-        nav {
+        app {
             bindings = <
-&bt BT_SEL 0  &kp LG(LC(LA(LS(BACKSLASH))))  &none         &kp C_BRI_DN                       &kp C_BRI_UP                            &none       &none                  &kp LG(L)              &kp LG(T)                  &kp LG(LS(T))              &kp LG(W)              &none
-&bt BT_SEL 1  &kp C_PREV                     &kp C_VOL_DN  &kp C_VOL_UP                       &kp C_NEXT                              &kp C_PP    &none                  &kp LG(LEFT_BRACKET)   &kp LG(LS(LEFT_BRACKET))   &kp LG(LS(RIGHT_BRACKET))  &kp LG(RIGHT_BRACKET)  &none
-&none         &none                          &none         &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &none       &none                  &none                  &kp LG(LC(LA(LEFT)))       &kp LG(LC(LA(RIGHT)))      &none                  &none
-                                                           &none                              &none                                   &none       &kp LG(LC(LA(LS(T))))  &kp LG(LC(LA(LS(S))))  &kp LG(LC(LA(LS(SPACE))))
+&bt BT_SEL 0  &none  &none  &none  &none  &none    &none                  &kp LG(L)              &kp LG(T)                  &kp LG(LS(T))              &kp LG(W)              &none
+&bt BT_SEL 1  &none  &none  &none  &none  &none    &none                  &kp LG(LEFT_BRACKET)   &kp LG(LS(LEFT_BRACKET))   &kp LG(LS(RIGHT_BRACKET))  &kp LG(RIGHT_BRACKET)  &none
+&none         &none  &none  &none  &none  &none    &none                  &none                  &kp LG(LC(LA(LEFT)))       &kp LG(LC(LA(RIGHT)))      &none                  &none
+                            &none  &none  &none    &kp LG(LC(LA(LS(T))))  &kp LG(LC(LA(LS(S))))  &kp LG(LC(LA(LS(SPACE))))
+            >;
+        };
+
+        system {
+            bindings = <
+&bt BT_SEL 0  &kp LG(LC(LA(LS(BACKSLASH))))  &none         &kp C_BRI_DN                       &kp C_BRI_UP                            &none       &none  &none  &none  &none  &none  &none
+&bt BT_SEL 1  &kp C_PREV                     &kp C_VOL_DN  &kp C_VOL_UP                       &kp C_NEXT                              &kp C_PP    &none  &none  &none  &none  &none  &none
+&none         &none                          &none         &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &none       &none  &none  &none  &none  &none  &none
+                                                           &none                              &none                                   &none       &none  &none  &none
             >;
         };
 
