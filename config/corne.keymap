@@ -294,10 +294,10 @@
 
         numbers {
             bindings = <
-&none       &kp GRAVE       &kp NUBS           &kp EXCLAMATION  &kp QUESTION  &none        &none   &kp N6  &kp N7  &kp N8  &kp N9  &none
-&caps_word  &kp MINUS       &kp SINGLE_QUOTE   &kp COMMA        &kp DOT       &kp SLASH    &kp N0  &kp N1  &kp N2  &kp N3  &kp N4  &none
-&none       &kp UNDERSCORE  &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp COLON     &none        &none   &kp N5  &none   &none   &none   &none
-                                               &kp LC(S)        &kp LS(TAB)   &kp N0       &none   &none   &none
+&none       &kp GRAVE       &kp NUBS           &kp EXCLAMATION  &kp QUESTION  &none        &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &none
+&caps_word  &kp MINUS       &kp SINGLE_QUOTE   &kp COMMA        &kp DOT       &kp SLASH    &none   &kp N1  &kp N2  &kp N3  &kp N4  &none
+&none       &kp UNDERSCORE  &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp COLON     &none        &none   &kp N0  &none   &none   &none   &none
+                                               &kp LC(S)        &kp LS(TAB)   &none        &none   &none   &none
             >;
         };
 
