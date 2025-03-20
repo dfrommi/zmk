@@ -303,10 +303,10 @@
 
         symbols {
             bindings = <
-&none  &none      &kp PERCENT  &th_square_brackets 0 LEFT_BRACKET  &kp RIGHT_BRACKET  &none            &none   &th_brackets 0 LT             &th_thin_arrow 0 GT  &th_fat_arrow 0 EQUAL  &none         &none
-&none  &kp CARET  &kp DOLLAR   &th_braces 0 LEFT_BRACE             &kp RIGHT_BRACE    &kp BACKSLASH    &kp AT  &th_paren 0 LEFT_PARENTHESIS  &kp RPAR             &kp HASH               &kp ASTERISK  &none
-&none  &none      &none        &kp LS(NUBS)                        &kp PIPE           &none            &none   &kp AMPERSAND                 &kp PLUS             &none                  &none         &none
-                               &none                               &none              &none            &none   &none                         &kp DEL
+&none  &none      &kp PERCENT  &th_square_brackets 0 LEFT_BRACKET  &kp RIGHT_BRACKET  &none            &none           &th_brackets 0 LT             &th_thin_arrow 0 GT  &th_fat_arrow 0 EQUAL  &none         &none
+&none  &kp CARET  &kp DOLLAR   &th_braces 0 LEFT_BRACE             &kp RIGHT_BRACE    &kp BACKSLASH    &kp AT          &th_paren 0 LEFT_PARENTHESIS  &kp RPAR             &kp HASH               &kp ASTERISK  &none
+&none  &none      &none        &kp LS(NUBS)                        &kp PIPE           &none            &none           &kp AMPERSAND                 &kp PLUS             &none                  &none         &none
+                               &none                               &none              &none            &kp LS(RETURN)  &kp LA(DEL)                   &kp LA(BACKSPACE)
             >;
         };
 
