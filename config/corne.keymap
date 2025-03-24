@@ -285,10 +285,10 @@
 
         default_layer {
             bindings = <
-&kp LALT  &as Q  &as W  &as F             &as P         &a_umlaut 0 0     &u_umlaut 0 0  &as L         &as U                  &as Y  &kp K  &none
-&none     &as A  &as R  &as S             &as T         &as G             &as M          &as N         &as E                  &as I  &as O  &none
-&kp LCMD  &as Z  &as X  &as C             &as D         &s_zett           &o_umlaut 0 0  &as H         &as J                  &as B  &kp V  &none
-                        &my_mt LCTRL ESC  &my_lt 4 TAB  &my_lt 2 SPACE    &my_lt 1 RET   &my_lt 3 DEL  &my_mt RGUI BACKSPACE
+&kp LALT  &as Q  &as W  &as F             &as P         &as B             &as J         &as L         &as U                  &as Y          &s_zett        &none
+&none     &as A  &as R  &as S             &as T         &as G             &as M         &as N         &as E                  &as I          &as O          &none
+&kp LCMD  &as Z  &as X  &as C             &as D         &as V             &as K         &as H         &u_umlaut 0 0          &a_umlaut 0 0  &o_umlaut 0 0  &none
+                        &my_mt LCTRL ESC  &my_lt 4 TAB  &my_lt 2 SPACE    &my_lt 1 RET  &my_lt 3 DEL  &my_mt RGUI BACKSPACE
             >;
         };
 
