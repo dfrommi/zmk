@@ -285,19 +285,19 @@
 
         default_layer {
             bindings = <
-&kp LALT   &as Q  &as W  &as F             &as P         &a_umlaut 0 0     &u_umlaut 0 0  &as L         &as U                  &as Y  &s_zett        &none
-&kp LSHFT  &as A  &as R  &as S             &as T         &as G             &as M          &as N         &as E                  &as I  &as O          &kp RIGHT_SHIFT
-&kp LCMD   &as Z  &as X  &as C             &as D         &as V             &as K          &as H         &as J                  &as B  &o_umlaut 0 0  &none
-                         &my_mt LCTRL ESC  &my_lt 4 TAB  &my_lt 2 SPACE    &my_lt 1 RET   &my_lt 3 DEL  &my_mt RGUI BACKSPACE
+&kp LALT  &as Q  &as W  &as F             &as P         &a_umlaut 0 0     &u_umlaut 0 0  &as L         &as U                  &as Y  &s_zett        &none
+&as V     &as A  &as R  &as S             &as T         &as G             &as M          &as N         &as E                  &as I  &as O          &as B
+&kp LCMD  &as Z  &as X  &as C             &as D         &kp LSHFT         &kp RSHFT      &as H         &as J                  &as K  &o_umlaut 0 0  &none
+                        &my_mt LCTRL ESC  &my_lt 4 TAB  &my_lt 2 SPACE    &my_lt 1 RET   &my_lt 3 DEL  &my_mt RGUI BACKSPACE
             >;
         };
 
         numbers {
             bindings = <
-&none       &none           &kp GRAVE          &kp EXCLAMATION  &kp QUESTION  &none        &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &none
-&caps_word  &kp MINUS       &kp SINGLE_QUOTE   &kp COMMA        &kp DOT       &kp SLASH    &none   &kp N1  &kp N2  &kp N3  &kp N4  &none
-&none       &kp UNDERSCORE  &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp COLON     &none        &none   &kp N0  &none   &none   &none   &none
-                                               &kp LC(S)        &kp LS(TAB)   &none        &none   &none   &none
+&none  &none           &kp GRAVE          &kp EXCLAMATION  &kp QUESTION  &none         &none  &kp N6        &kp N7        &kp N8        &none   &none
+&none  &kp MINUS       &kp SINGLE_QUOTE   &kp COMMA        &kp DOT       &kp SLASH     &none  &kp N0        &kp NUMBER_1  &kp N5        &kp N9  &none
+&none  &kp UNDERSCORE  &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp COLON     &caps_word    &none  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &none   &none
+                                          &kp LC(S)        &kp LS(TAB)   &none         &none  &none         &none
             >;
         };
 
@@ -305,7 +305,7 @@
             bindings = <
 &none  &none      &kp PERCENT  &th_square_brackets 0 LEFT_BRACKET  &kp RIGHT_BRACKET  &none            &none           &th_brackets 0 LT             &th_thin_arrow 0 GT  &th_fat_arrow 0 EQUAL  &none         &none
 &none  &kp CARET  &kp DOLLAR   &th_braces 0 LEFT_BRACE             &kp RIGHT_BRACE    &kp BACKSLASH    &kp AT          &th_paren 0 LEFT_PARENTHESIS  &kp RPAR             &kp HASH               &kp ASTERISK  &none
-&none  &none      &kp TILDE2   &kp TILDE                           &kp PIPE           &none            &none           &kp AMPERSAND                 &kp PLUS             &none                  &none         &none
+&none  &none      &kp TILDE2   &kp TILDE                           &kp PIPE           &none            &caps_word      &kp AMPERSAND                 &kp PLUS             &none                  &none         &none
                                &none                               &none              &none            &kp LS(RETURN)  &kp LA(DEL)                   &kp LA(BACKSPACE)
             >;
         };
