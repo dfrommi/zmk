@@ -312,10 +312,10 @@
 
         button {
             bindings = <
-&none  &none  &none  &none      &none       &none    &none  &none               &none           &none         &none          &none
-&none  &none  &none  &as COMMA  &as PERIOD  &none    &none  &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &none
-&none  &none  &none  &none      &none       &none    &none  &kp LA(LEFT_ARROW)  &kp LG(DOWN)    &kp LG(UP)    &kp LA(RIGHT)  &none
-                     &none      &none       &none    &none  &none               &none
+&none  &none  &none  &none                  &none                   &none    &none  &none               &none           &none         &none          &none
+&none  &none  &none  &as LA(LC(LG(COMMA)))  &as LA(LC(LG(PERIOD)))  &none    &none  &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &none
+&none  &none  &none  &none                  &none                   &none    &none  &kp LA(LEFT_ARROW)  &kp LG(DOWN)    &kp LG(UP)    &kp LA(RIGHT)  &none
+                     &none                  &none                   &none    &none  &none               &none
             >;
         };
 
