@@ -312,10 +312,10 @@
 
         button {
             bindings = <
-&none                  &none                         &none                 &none               &none                          &none                     &none  &none               &none           &none         &none          &none
-&as LA(LC(LG(MINUS)))  &as LA(LC(LG(LEFT)))          &as LA(LC(LG(DOWN)))  &as LA(LC(LG(UP)))  &as LA(LC(LG(RIGHT)))          &as LA(LC(LG(EQUAL)))     &none  &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &none
-&none                  &as LA(LC(LG(LEFT_BRACKET)))  &none                 &none               &as LA(LC(LG(RIGHT_BRACKET)))  &none                     &none  &kp LA(LEFT_ARROW)  &kp LG(DOWN)    &kp LG(UP)    &kp LA(RIGHT)  &none
-                                                                           &none               &as LA(LC(LG(COMMA)))          &as LA(LC(LG(PERIOD)))    &none  &none               &none
+&none                  &none                 &none                 &none                         &none                          &none                     &none  &none               &none           &none         &none          &none
+&as LA(LC(LG(MINUS)))  &as LA(LC(LG(LEFT)))  &as LA(LC(LG(DOWN)))  &as LA(LC(LG(UP)))            &as LA(LC(LG(RIGHT)))          &as LA(LC(LG(EQUAL)))     &none  &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &none
+&none                  &none                 &none                 &as LA(LC(LG(LEFT_BRACKET)))  &as LA(LC(LG(RIGHT_BRACKET)))  &none                     &none  &kp LA(LEFT_ARROW)  &kp LG(DOWN)    &kp LG(UP)    &kp LA(RIGHT)  &none
+                                                                   &none                         &as LA(LC(LG(COMMA)))          &as LA(LC(LG(PERIOD)))    &none  &none               &none
             >;
         };
 
