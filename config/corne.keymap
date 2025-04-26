@@ -294,9 +294,9 @@
 
         numbers {
             bindings = <
-&none  &th_fat_arrow 0 EQUAL  &kp GRAVE          &kp EXCLAMATION  &kp QUESTION  &kp TILDE     &none  &kp N6        &kp N7        &kp N8        &none   &none
+&none  &th_fat_arrow 0 EQUAL  &kp GRAVE          &kp EXCLAMATION  &kp QUESTION  &kp AT        &none  &kp N6        &kp N7        &kp N8        &none   &none
 &none  &kp MINUS              &kp SINGLE_QUOTE   &kp COMMA        &kp DOT       &kp SLASH     &none  &kp N0        &kp NUMBER_1  &kp N5        &kp N9  &none
-&none  &kp UNDERSCORE         &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp COLON     &kp PIPE      &none  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &none   &none
+&none  &kp UNDERSCORE         &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp COLON     &kp TILDE     &none  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &none   &none
                                                  &kp LC(S)        &kp LS(TAB)   &caps_word    &none  &none         &none
             >;
         };
@@ -304,8 +304,8 @@
         symbols {
             bindings = <
 &none  &none      &kp PERCENT  &th_square_brackets 0 LEFT_BRACKET  &kp RIGHT_BRACKET  &none            &none           &th_brackets 0 LT             &th_thin_arrow 0 GT  &none     &none         &none
-&none  &kp CARET  &kp DOLLAR   &th_braces 0 LEFT_BRACE             &kp RIGHT_BRACE    &kp BACKSLASH    &kp AT          &th_paren 0 LEFT_PARENTHESIS  &kp RPAR             &kp HASH  &kp ASTERISK  &none
-&none  &none      &none        &none                               &none              &none            &none           &kp AMPERSAND                 &kp PLUS             &none     &none         &none
+&none  &kp CARET  &kp DOLLAR   &th_braces 0 LEFT_BRACE             &kp RIGHT_BRACE    &kp BACKSLASH    &none           &th_paren 0 LEFT_PARENTHESIS  &kp RPAR             &kp HASH  &kp ASTERISK  &none
+&none  &none      &none        &none                               &none              &kp PIPE         &none           &kp AMPERSAND                 &kp PLUS             &none     &none         &none
                                &none                               &none              &none            &kp LS(RETURN)  &kp LA(DEL)                   &kp LA(BACKSPACE)
             >;
         };
