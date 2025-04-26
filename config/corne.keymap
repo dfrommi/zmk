@@ -297,43 +297,43 @@
 &kp LALT   &as Q  &as W  &as F             &as P         &as B             &s_zett        &as L         &as U                   &as Y  &a_umlaut 0 0  &kp RALT
 &kp LCTRL  &as A  &as R  &as S             &as T         &as G             &as M          &as N         &as E                   &as I  &as O          &kp RCTRL
 &kp LCMD   &as Z  &as X  &as C             &as D         &as V             &o_umlaut 0 0  &as H         &as J                   &as K  &u_umlaut 0 0  &kp RCMD
-                         &my_mt LSHFT ESC  &my_lt 4 TAB  &my_lt 2 SPACE    &my_lt 1 RET   &my_lt 3 DEL  &my_mt RSHFT BACKSPACE
+                         &my_mt LSHFT ESC  &my_lt 2 TAB  &my_lt 4 SPACE    &my_lt 3 RET   &my_lt 1 DEL  &my_mt RSHFT BACKSPACE
             >;
         };
 
         numbers {
             bindings = <
-&none     &th_fat_arrow 0 EQUAL  &kp GRAVE          &kp EXCLAMATION  &kp QUESTION  &kp AT                                 &none  &kp N6        &kp N7        &kp N8        &none   &none
-&kp PLUS  &kp MINUS              &kp SINGLE_QUOTE   &kp COMMA        &kp DOT       &th_slash_backslash BACKSLASH SLASH    &none  &kp N0        &kp NUMBER_1  &kp N5        &kp N9  &none
-&none     &kp UNDERSCORE         &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp COLON     &kp TILDE                              &none  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &none   &none
-                                                    &kp LC(S)        &kp LS(TAB)   &caps_word                             &none  &none         &none
+&none  &th_fat_arrow 0 EQUAL  &kp GRAVE          &kp EXCLAMATION  &kp QUESTION  &kp PLUS     &none  &kp N6        &kp N7        &kp N8        &none   &none
+&none  &kp MINUS              &kp SINGLE_QUOTE   &kp COMMA        &kp DOT       &kp SLASH    &none  &kp N0        &kp NUMBER_1  &kp N5        &kp N9  &none
+&none  &kp UNDERSCORE         &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp COLON     &kp TILDE    &none  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &none   &none
+                                                 &none            &none         &none        &none  &none         &none
             >;
         };
 
         symbols {
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp PERCENT     &kp HASH           &th_square_brackets 0 LEFT_BRACKET  &kp RIGHT_BRACKET      &kp ASTERISK                   &none
-&none  &none  &none  &none  &none  &none    &kp AMPS        &th_brackets 0 LT  &th_paren 0 LEFT_PARENTHESIS        &kp RIGHT_PARENTHESIS  &th_thin_arrow 0 GREATER_THAN  &none
-&none  &none  &none  &none  &none  &none    &kp PIPE        &kp CARET          &th_braces 0 LEFT_BRACE             &kp RIGHT_BRACE        &kp DOLLAR                     &none
-                     &none  &none  &none    &kp LS(RETURN)  &kp LA(DEL)        &kp LA(BACKSPACE)
+&none  &none  &none  &none  &none  &none    &kp PERCENT  &kp HASH                      &th_square_brackets 0 LEFT_BRACKET  &kp RIGHT_BRACKET              &kp ASTERISK   &none
+&none  &none  &none  &none  &none  &none    &kp AT       &kp CARET                     &th_braces 0 LEFT_BRACE             &kp RIGHT_BRACE                &kp DOLLAR     &none
+&none  &none  &none  &none  &none  &none    &kp PIPE     &kp AMPS                      &th_brackets 0 LESS_THAN            &th_thin_arrow 0 GREATER_THAN  &kp BACKSLASH  &none
+                     &none  &none  &none    &none        &th_paren 0 LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
             >;
         };
 
         button {
             bindings = <
-&none                  &none                 &none                 &none                         &none                          &none                     &none  &none               &none           &none         &none          &none
-&as LA(LC(LG(MINUS)))  &as LA(LC(LG(LEFT)))  &as LA(LC(LG(DOWN)))  &as LA(LC(LG(UP)))            &as LA(LC(LG(RIGHT)))          &as LA(LC(LG(EQUAL)))     &none  &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &none
-&none                  &none                 &none                 &as LA(LC(LG(LEFT_BRACKET)))  &as LA(LC(LG(RIGHT_BRACKET)))  &none                     &none  &kp LA(LEFT_ARROW)  &kp LG(DOWN)    &kp LG(UP)    &kp LA(RIGHT)  &none
-                                                                   &none                         &as LA(LC(LG(COMMA)))          &as LA(LC(LG(PERIOD)))    &none  &none               &none
+&none                  &none                 &none                 &none                         &none                          &none                    &none  &none               &none           &none         &none          &none
+&as LA(LC(LG(MINUS)))  &as LA(LC(LG(LEFT)))  &as LA(LC(LG(DOWN)))  &as LA(LC(LG(UP)))            &as LA(LC(LG(RIGHT)))          &as LA(LC(LG(EQUAL)))    &none  &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &none
+&none                  &none                 &none                 &as LA(LC(LG(LEFT_BRACKET)))  &as LA(LC(LG(RIGHT_BRACKET)))  &none                    &none  &kp LA(LEFT_ARROW)  &kp LG(DOWN)    &kp LG(UP)    &kp LA(RIGHT)  &none
+                                                                   &kp LC(S)                     &kp LS(TAB)                    &caps_word               &none  &none               &none
             >;
         };
 
         app {
             bindings = <
-&none  &as LA(LC(LG(Q)))  &as LA(LC(LG(W)))  &as LA(LC(LG(F)))  &as LA(LC(LG(P)))  &as LA(LC(LG(B)))    &none                  &kp LG(L)                  &kp LG(T)                 &kp LG(LS(T))              &none                  &none
-&none  &as LA(LC(LG(A)))  &as LA(LC(LG(R)))  &as LA(LC(LG(S)))  &as LA(LC(LG(T)))  &as LA(LC(LG(G)))    &none                  &kp LG(LEFT_BRACKET)       &kp LG(LS(LEFT_BRACKET))  &kp LG(LS(RIGHT_BRACKET))  &kp LG(RIGHT_BRACKET)  &kp LG(W)
-&none  &as LA(LC(LG(Z)))  &as LA(LC(LG(X)))  &as LA(LC(LG(C)))  &as LA(LC(LG(D)))  &as LA(LC(LG(V)))    &none                  &as LA(LC(LG(H)))          &as LA(LC(LG(J)))         &as LA(LC(LG(K)))          &as LA(LC(LG(L)))      &none
-                                             &none              &none              &none                &as LA(LC(LG(SPACE)))  &as LA(LC(LG(BACKSLASH)))  &mo 5
+&bt BT_SEL 0  &as LA(LC(LG(Q)))  &as LA(LC(LG(W)))  &as LA(LC(LG(F)))  &as LA(LC(LG(P)))  &as LA(LC(LG(B)))    &none        &kp LG(L)             &kp LG(T)                 &kp LG(LS(T))              &kp LG(W)              &none
+&none         &as LA(LC(LG(A)))  &as LA(LC(LG(R)))  &as LA(LC(LG(S)))  &as LA(LC(LG(T)))  &as LA(LC(LG(G)))    &none        &kp LG(LEFT_BRACKET)  &kp LG(LS(LEFT_BRACKET))  &kp LG(LS(RIGHT_BRACKET))  &kp LG(RIGHT_BRACKET)  &none
+&bt BT_SEL 1  &as LA(LC(LG(Z)))  &as LA(LC(LG(X)))  &as LA(LC(LG(C)))  &as LA(LC(LG(D)))  &as LA(LC(LG(V)))    &none        &as LA(LC(LG(H)))     &as LA(LC(LG(J)))         &as LA(LC(LG(K)))          &as LA(LC(LG(L)))      &none
+                                                    &none              &none              &none                &kp LS(RET)  &kp LA(DEL)           &kp LA(BACKSPACE)
             >;
         };
 
