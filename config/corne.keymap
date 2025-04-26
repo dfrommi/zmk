@@ -147,6 +147,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        th_slash_backslash: th_slash_backslash {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TH_SLASH_BACKSLASH";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     macros {
@@ -294,10 +303,10 @@
 
         numbers {
             bindings = <
-&none  &th_fat_arrow 0 EQUAL  &kp GRAVE          &kp EXCLAMATION  &kp QUESTION  &kp AT        &none  &kp N6        &kp N7        &kp N8        &none   &none
-&none  &kp MINUS              &kp SINGLE_QUOTE   &kp COMMA        &kp DOT       &kp SLASH     &none  &kp N0        &kp NUMBER_1  &kp N5        &kp N9  &none
-&none  &kp UNDERSCORE         &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp COLON     &kp TILDE     &none  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &none   &none
-                                                 &kp LC(S)        &kp LS(TAB)   &caps_word    &none  &none         &none
+&none     &th_fat_arrow 0 EQUAL  &kp GRAVE          &kp EXCLAMATION  &kp QUESTION  &kp AT                                 &none  &kp N6        &kp N7        &kp N8        &none   &none
+&kp PLUS  &kp MINUS              &kp SINGLE_QUOTE   &kp COMMA        &kp DOT       &th_slash_backslash BACKSLASH SLASH    &none  &kp N0        &kp NUMBER_1  &kp N5        &kp N9  &none
+&none     &kp UNDERSCORE         &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp COLON     &kp TILDE                              &none  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &none   &none
+                                                    &kp LC(S)        &kp LS(TAB)   &caps_word                             &none  &none         &none
             >;
         };
 
