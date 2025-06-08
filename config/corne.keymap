@@ -312,10 +312,10 @@
 
         symbols {
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp PERCENT  &kp HASH                      &th_square_brackets 0 LEFT_BRACKET  &kp RIGHT_BRACKET              &kp ASTERISK   &none
-&none  &none  &none  &none  &none  &none    &kp AT       &kp CARET                     &th_braces 0 LEFT_BRACE             &kp RIGHT_BRACE                &kp DOLLAR     &none
-&none  &none  &none  &none  &none  &none    &kp PIPE     &kp AMPS                      &th_brackets 0 LESS_THAN            &th_thin_arrow 0 GREATER_THAN  &kp BACKSLASH  &none
-                     &none  &none  &none    &none        &th_paren 0 LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&none  &none  &none  &none  &none  &none    &kp AT       &th_square_brackets 0 LEFT_BRACKET  &kp RIGHT_BRACKET      &kp HASH  &kp ASTERISK   &none
+&none  &none  &none  &none  &none  &none    &kp CARET    &th_braces 0 LEFT_BRACE             &kp RIGHT_BRACE        &kp AMPS  &kp DOLLAR     &none
+&none  &none  &none  &none  &none  &none    &kp PERCENT  &th_brackets 0 LT                   &th_thin_arrow 0 GT    &kp PIPE  &kp BACKSLASH  &none
+                     &none  &none  &none    &none        &th_paren 0 LEFT_PARENTHESIS        &kp RIGHT_PARENTHESIS
             >;
         };
 
