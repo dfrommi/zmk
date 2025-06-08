@@ -332,7 +332,7 @@
             bindings = <
 &bt BT_SEL 0  &as LA(LC(LG(Q)))  &as LA(LC(LG(W)))  &as LA(LC(LG(F)))  &as LA(LC(LG(P)))  &as LA(LC(LG(B)))    &none        &kp LG(L)             &kp LG(T)                 &kp LG(LS(T))              &kp LG(W)              &none
 &none         &as LA(LC(LG(A)))  &as LA(LC(LG(R)))  &as LA(LC(LG(S)))  &as LA(LC(LG(T)))  &as LA(LC(LG(G)))    &none        &kp LG(LEFT_BRACKET)  &kp LG(LS(LEFT_BRACKET))  &kp LG(LS(RIGHT_BRACKET))  &kp LG(RIGHT_BRACKET)  &none
-&bt BT_SEL 1  &as LA(LC(LG(Z)))  &as LA(LC(LG(X)))  &as LA(LC(LG(C)))  &as LA(LC(LG(D)))  &as LA(LC(LG(V)))    &none        &as LA(LC(LG(H)))     &as LA(LC(LG(J)))         &as LA(LC(LG(K)))          &as LA(LC(LG(L)))      &none
+&bt BT_SEL 1  &as LA(LC(LG(Z)))  &as LA(LC(LG(X)))  &as LA(LC(LG(C)))  &as LA(LC(LG(D)))  &as LA(LC(LG(V)))    &none        &as LC(H)             &as LC(J)                 &as LC(K)                  &as LC(L)              &none
                                                     &none              &none              &none                &kp LS(RET)  &kp LA(DEL)           &kp LA(BACKSPACE)
             >;
         };
