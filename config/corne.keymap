@@ -306,25 +306,25 @@
 &none          &kp TILDE       &kp GRAVE          &kp EXCLAMATION  &kp QUESTION  &kp ASTERISK    &none  &kp N7        &kp N8        &kp N9        &none         &none
 &kp BACKSLASH  &kp MINUS       &kp SINGLE_QUOTE   &kp COMMA        &kp DOT       &kp SLASH       &none  &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none
 &none          &kp UNDERSCORE  &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp COLON     &kp PLUS        &none  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none         &none
-                                                  &none            &kp LS(TAB)   &caps_word      &none  &none         &none
+                                                  &caps_word       &kp LS(TAB)   &trans          &none  &none         &none
             >;
         };
 
         symbols {
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp HASH       &th_braces 0 LEFT_BRACE       &th_square_brackets 0 LEFT_BRACKET  &th_brackets 0 LT      &kp CARET   &none
-&none  &none  &none  &none  &none  &none    &kp AMPS       &th_paren 0 LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS               &th_fat_arrow 0 EQUAL  &kp AT      &kp PERCENT
-&none  &none  &none  &none  &none  &none    &kp PIPE       &kp RIGHT_BRACE               &kp RIGHT_BRACKET                   &kp GT                 &kp DOLLAR  &none
+&none  &none  &none  &none  &none  &none    &kp HASH       &th_braces 0 LEFT_BRACE       &th_square_brackets 0 LEFT_BRACKET  &th_brackets 0 LT    &kp CARET              &none
+&none  &none  &none  &none  &none  &none    &kp AMPS       &th_paren 0 LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS               &kp AT               &th_fat_arrow 0 EQUAL  &kp PERCENT
+&none  &none  &none  &none  &none  &none    &kp PIPE       &kp RIGHT_BRACE               &kp RIGHT_BRACKET                   &th_thin_arrow 0 GT  &kp DOLLAR             &none
                      &none  &none  &none    &kp LS(ENTER)  &kp LA(DELETE)                &kp LA(BACKSPACE)
             >;
         };
 
         button {
             bindings = <
-&none  &none  &none      &none      &none        &none         &none  &none               &none           &none         &none          &none
-&none  &none  &none      &none      &none        &none         &none  &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &none
-&none  &none  &as LG(X)  &as LG(C)  &none        &as LG(V)     &none  &kp LA(LEFT_ARROW)  &kp LG(DOWN)    &kp LG(UP)    &kp LA(RIGHT)  &none
-                         &none      &kp LS(TAB)  &caps_word    &none  &none               &none
+&none  &none  &none      &none       &none        &none        &none  &none               &none           &none         &none          &none
+&none  &none  &none      &none       &none        &none        &none  &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &none
+&none  &none  &as LG(X)  &as LG(C)   &none        &as LG(V)    &none  &kp LA(LEFT_ARROW)  &kp LG(DOWN)    &kp LG(UP)    &kp LA(RIGHT)  &none
+                         &caps_word  &kp LS(TAB)  &trans       &none  &none               &none
             >;
         };
 
