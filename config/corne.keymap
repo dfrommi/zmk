@@ -294,9 +294,9 @@
 
         default_layer {
             bindings = <
-&kp LALT   &as Q  &as W  &as F             &as P         &as B             &s_zett        &as L         &as U                   &as Y  &a_umlaut 0 0  &kp RALT
+&kp LALT   &as Q  &as W  &as F             &as P         &as B             &s_zett        &as L         &as U                   &as Y  &o_umlaut 0 0  &kp RALT
 &kp LCTRL  &as A  &as R  &as S             &as T         &as G             &as M          &as N         &as E                   &as I  &as O          &kp RCTRL
-&kp LCMD   &as Z  &as X  &as C             &as D         &as V             &o_umlaut 0 0  &as H         &as J                   &as K  &u_umlaut 0 0  &kp RCMD
+&kp LCMD   &as Z  &as X  &as C             &as D         &as V             &a_umlaut 0 0  &as H         &as J                   &as K  &u_umlaut 0 0  &kp RCMD
                          &my_mt LSHFT ESC  &my_lt 2 TAB  &my_lt 4 SPACE    &my_lt 3 RET   &my_lt 1 DEL  &my_mt RSHFT BACKSPACE
             >;
         };
