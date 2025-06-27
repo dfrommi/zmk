@@ -289,6 +289,60 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        CombN1 {
+            bindings = <&kp NUMBER_1>;
+            key-positions = <1 13>;
+        };
+
+        CombN2 {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <2 14>;
+        };
+
+        CombN3 {
+            bindings = <&kp NUMBER_3>;
+            key-positions = <3 15>;
+        };
+
+        CombN4 {
+            bindings = <&kp NUMBER_4>;
+            key-positions = <4 16>;
+        };
+
+        CombN5 {
+            bindings = <&kp NUMBER_5>;
+            key-positions = <5 17>;
+        };
+
+        CombN6 {
+            bindings = <&kp NUMBER_6>;
+            key-positions = <6 18>;
+        };
+
+        CombN7 {
+            bindings = <&kp NUMBER_7>;
+            key-positions = <7 19>;
+        };
+
+        CombN8 {
+            bindings = <&kp NUMBER_8>;
+            key-positions = <8 20>;
+        };
+
+        CombN9 {
+            bindings = <&kp NUMBER_9>;
+            key-positions = <9 21>;
+        };
+
+        CombN0 {
+            bindings = <&kp NUMBER_0>;
+            key-positions = <10 22>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
