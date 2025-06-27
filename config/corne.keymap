@@ -156,6 +156,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        th_kp_kp: th_kp_kp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TH_KP_KP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     macros {
@@ -294,52 +303,91 @@
 
         CombN1 {
             bindings = <&kp NUMBER_1>;
-            key-positions = <1 13>;
+            key-positions = <18 19>;
+            layers = <1>;
         };
 
         CombN2 {
             bindings = <&kp NUMBER_2>;
             key-positions = <2 14>;
+            layers = <1>;
         };
 
         CombN3 {
             bindings = <&kp NUMBER_3>;
             key-positions = <3 15>;
+            layers = <1>;
         };
 
         CombN4 {
             bindings = <&kp NUMBER_4>;
             key-positions = <4 16>;
+            layers = <1>;
         };
 
         CombN5 {
             bindings = <&kp NUMBER_5>;
             key-positions = <5 17>;
+            layers = <1>;
         };
 
         CombN6 {
             bindings = <&kp NUMBER_6>;
             key-positions = <6 18>;
+            layers = <1>;
         };
 
         CombN7 {
             bindings = <&kp NUMBER_7>;
             key-positions = <7 19>;
+            layers = <1>;
         };
 
         CombN8 {
             bindings = <&kp NUMBER_8>;
             key-positions = <8 20>;
+            layers = <1>;
         };
 
         CombN9 {
             bindings = <&kp NUMBER_9>;
             key-positions = <9 21>;
+            layers = <1>;
         };
 
         CombN0 {
             bindings = <&kp NUMBER_0>;
-            key-positions = <10 22>;
+            key-positions = <16 17>;
+        };
+
+        Combo_LCMD {
+            bindings = <&sk LCMD>;
+            key-positions = <16 28>;
+        };
+
+        Combo_RCMD {
+            bindings = <&sk RCMD>;
+            key-positions = <19 31>;
+        };
+
+        Combo_LOPT {
+            bindings = <&sk LALT>;
+            key-positions = <27 15>;
+        };
+
+        Combo_ROPT {
+            bindings = <&sk RALT>;
+            key-positions = <20 32>;
+        };
+
+        Combo_LCTRL {
+            bindings = <&sk LCTRL>;
+            key-positions = <14 26>;
+        };
+
+        Combo_RCTRL {
+            bindings = <&sk RALT>;
+            key-positions = <21 33>;
         };
     };
 
@@ -348,10 +396,37 @@
 
         default_layer {
             bindings = <
-&kp LALT   &as Q  &as W  &as F             &as P         &as B             &s_zett        &as L         &as U                   &as Y  &o_umlaut 0 0  &kp RALT
-&kp LCTRL  &as A  &as R  &as S             &as T         &as G             &as M          &as N         &as E                   &as I  &as O          &kp RCTRL
-&kp LCMD   &as Z  &as X  &as C             &as D         &as V             &a_umlaut 0 0  &as H         &as J                   &as K  &u_umlaut 0 0  &kp RCMD
-                         &my_mt LSHFT ESC  &my_lt 6 TAB  &my_lt 4 SPACE    &my_lt 3 RET   &my_lt 1 DEL  &my_mt RSHFT BACKSPACE
+&kp LALT   &as Q  &as W  &as F             &as P         &as B             &s_zett        &as L          &as U             &as Y  &o_umlaut 0 0  &kp RALT
+&kp LCTRL  &as A  &as R  &as S             &as T         &as G             &as M          &as N          &as E             &as I  &as O          &kp RCTRL
+&kp LCMD   &as Z  &as X  &as C             &as D         &as V             &a_umlaut 0 0  &as H          &as J             &as K  &u_umlaut 0 0  &kp RCMD
+                         &my_mt LSHFT ESC  &my_lt 3 TAB  &my_lt 2 SPACE    &my_lt 1 RET   &kp BACKSPACE  &my_mt RSHFT DEL
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&none  &th_fat_arrow 0 EQUAL  &kp GRAVE          &kp EXCLAMATION  &kp QUESTION  &kp CARET      &kp DOLLAR    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE             &kp RIGHT_BRACE    &none
+&none  &th_kp_kp TILDE MINUS  &kp SINGLE_QUOTE   &kp COMMA        &kp DOT       &kp HASH       &kp ASTERISK  &kp AT                &kp AMPERSAND          &th_kp_kp BACKSLASH SLASH  &kp PIPE           &none
+&none  &kp UNDERSCORE         &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp COLON     &kp PERCENT    &kp PLUS      &kp LT                &th_thin_arrow 0 GT    &kp LEFT_BRACKET           &kp RIGHT_BRACKET  &none
+                                                 &caps_word       &kp LS(TAB)   &trans         &none         &none                 &none
+            >;
+        };
+
+        app {
+            bindings = <
+&bt BT_SEL 0  &as LA(LC(LG(Q)))  &as LA(LC(LG(W)))  &as LA(LC(LG(F)))  &as LA(LC(LG(P)))  &as LA(LC(LG(B)))    &kp LG(L)                     &kp LG(T)             &none                     &kp LG(LS(T))              &kp LG(W)              &none
+&none         &as LA(LC(LG(A)))  &as LA(LC(LG(R)))  &as LA(LC(LG(S)))  &as LA(LC(LG(T)))  &as LA(LC(LG(G)))    &kp LA(LC(LG(LEFT_BRACKET)))  &kp LG(LEFT_BRACKET)  &kp LG(LS(LEFT_BRACKET))  &kp LG(LS(RIGHT_BRACKET))  &kp LG(RIGHT_BRACKET)  &kp LA(LC(LG(RIGHT_BRACKET)))
+&bt BT_SEL 1  &as LA(LC(LG(Z)))  &as LA(LC(LG(X)))  &as LA(LC(LG(C)))  &as LA(LC(LG(D)))  &as LA(LC(LG(V)))    &kp LA(LC(LG(EQUAL)))         &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(DOWN)))      &kp LA(LC(LG(UP_ARROW)))   &kp LA(LC(LG(RIGHT)))  &kp LA(LC(LG(MINUS)))
+                                                    &none              &none              &none                &kp LS(RET)                   &kp LA(BACKSPACE)     &kp LA(DELETE)
+            >;
+        };
+
+        button {
+            bindings = <
+&none  &none  &none      &none      &none  &none        &none  &none               &none           &none         &none          &none
+&none  &none  &none      &none      &none  &none        &none  &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &none
+&none  &none  &as LG(X)  &as LG(C)  &none  &as LG(V)    &none  &kp LA(LEFT_ARROW)  &kp LG(DOWN)    &kp LG(UP)    &kp LA(RIGHT)  &none
+                         &none      &none  &none        &none  &none               &none
             >;
         };
 
@@ -370,24 +445,6 @@
 &none  &none  &none  &none  &none  &none    &kp AMPS       &th_paren 0 LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS               &kp AT               &th_fat_arrow 0 EQUAL  &kp PERCENT
 &none  &none  &none  &none  &none  &none    &kp PIPE       &kp RIGHT_BRACE               &kp RIGHT_BRACKET                   &th_thin_arrow 0 GT  &kp DOLLAR             &none
                      &none  &none  &none    &kp LS(ENTER)  &kp LA(DELETE)                &kp LA(BACKSPACE)
-            >;
-        };
-
-        button {
-            bindings = <
-&none  &none  &none      &none       &none        &none        &none  &none               &none           &none         &none          &none
-&none  &none  &none      &none       &none        &none        &none  &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &none
-&none  &none  &as LG(X)  &as LG(C)   &none        &as LG(V)    &none  &kp LA(LEFT_ARROW)  &kp LG(DOWN)    &kp LG(UP)    &kp LA(RIGHT)  &none
-                         &caps_word  &kp LS(TAB)  &trans       &none  &none               &none
-            >;
-        };
-
-        app {
-            bindings = <
-&bt BT_SEL 0  &as LA(LC(LG(Q)))  &as LA(LC(LG(W)))  &as LA(LC(LG(F)))  &as LA(LC(LG(P)))  &as LA(LC(LG(B)))    &kp LG(L)                     &kp LG(T)             &none                     &kp LG(LS(T))              &kp LG(W)              &none
-&none         &as LA(LC(LG(A)))  &as LA(LC(LG(R)))  &as LA(LC(LG(S)))  &as LA(LC(LG(T)))  &as LA(LC(LG(G)))    &kp LA(LC(LG(LEFT_BRACKET)))  &kp LG(LEFT_BRACKET)  &kp LG(LS(LEFT_BRACKET))  &kp LG(LS(RIGHT_BRACKET))  &kp LG(RIGHT_BRACKET)  &kp LA(LC(LG(RIGHT_BRACKET)))
-&bt BT_SEL 1  &as LA(LC(LG(Z)))  &as LA(LC(LG(X)))  &as LA(LC(LG(C)))  &as LA(LC(LG(D)))  &as LA(LC(LG(V)))    &kp LA(LC(LG(EQUAL)))         &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(DOWN)))      &kp LA(LC(LG(UP_ARROW)))   &kp LA(LC(LG(RIGHT)))  &kp LA(LC(LG(MINUS)))
-                                                    &none              &none              &none                &kp LS(RET)                   &kp LA(DEL)           &kp LA(BACKSPACE)
             >;
         };
 
