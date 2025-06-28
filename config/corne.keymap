@@ -346,31 +346,37 @@
         Combo_LCMD {
             bindings = <&th_kp_sk LCMD LCMD>;
             key-positions = <16 28>;
+            layers = <0>;
         };
 
         Combo_RCMD {
             bindings = <&th_kp_sk RCMD RCMD>;
             key-positions = <19 31>;
+            layers = <0>;
         };
 
         Combo_LOPT {
             bindings = <&th_kp_sk LALT LALT>;
             key-positions = <27 15>;
+            layers = <0>;
         };
 
         Combo_ROPT {
             bindings = <&th_kp_sk RALT RALT>;
             key-positions = <20 32>;
+            layers = <0>;
         };
 
         Combo_LCTRL {
             bindings = <&th_kp_sk LCTRL LCTRL>;
             key-positions = <14 26>;
+            layers = <0>;
         };
 
         Combo_RCTRL {
             bindings = <&th_kp_sk RCTRL RCTRL>;
             key-positions = <21 33>;
+            layers = <0>;
         };
     };
 
@@ -379,10 +385,10 @@
 
         default_layer {
             bindings = <
-&kp LALT   &as Q  &as W  &as F                &as P            &as B                &s_zett          &as L       &as U                      &as Y  &o_umlaut 0 0  &kp RALT
-&kp LCTRL  &as A  &as R  &as S                &as T            &as G                &as M            &as N       &as E                      &as I  &as O          &kp RCTRL
-&kp LCMD   &as Z  &as X  &as C                &as D            &as V                &a_umlaut 0 0    &as H       &as J                      &as K  &u_umlaut 0 0  &kp RCMD
-                         &th_kp_kp LSHFT ESC  &th_kp_mo 3 TAB  &th_kp_mo 2 SPACE    &th_kp_mo 1 RET  &kp DELETE  &th_kp_kp RSHFT BACKSPACE
+&kp LALT   &as Q  &as W  &as F                &as P            &as B                &s_zett          &as L          &as U                &as Y  &o_umlaut 0 0  &kp RALT
+&kp LCTRL  &as A  &as R  &as S                &as T            &as G                &as M            &as N          &as E                &as I  &as O          &kp RCTRL
+&kp LCMD   &as Z  &as X  &as C                &as D            &as V                &a_umlaut 0 0    &as H          &as J                &as K  &u_umlaut 0 0  &kp RCMD
+                         &th_kp_kp LSHFT ESC  &th_kp_mo 3 TAB  &th_kp_mo 2 SPACE    &th_kp_mo 1 RET  &kp BACKSPACE  &th_kp_kp RSHFT DEL
             >;
         };
 
@@ -400,7 +406,7 @@
 &bt BT_SEL 0  &as LA(LC(LG(Q)))  &as LA(LC(LG(W)))  &as LA(LC(LG(F)))  &as LA(LC(LG(P)))  &as LA(LC(LG(B)))    &kp LG(L)                     &kp LG(T)             &none                     &kp LG(LS(T))              &kp LG(W)              &none
 &none         &as LA(LC(LG(A)))  &as LA(LC(LG(R)))  &as LA(LC(LG(S)))  &as LA(LC(LG(T)))  &as LA(LC(LG(G)))    &kp LA(LC(LG(LEFT_BRACKET)))  &kp LG(LEFT_BRACKET)  &kp LG(LS(LEFT_BRACKET))  &kp LG(LS(RIGHT_BRACKET))  &kp LG(RIGHT_BRACKET)  &kp LA(LC(LG(RIGHT_BRACKET)))
 &bt BT_SEL 1  &as LA(LC(LG(Z)))  &as LA(LC(LG(X)))  &as LA(LC(LG(C)))  &as LA(LC(LG(D)))  &as LA(LC(LG(V)))    &kp LA(LC(LG(EQUAL)))         &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(DOWN)))      &kp LA(LC(LG(UP_ARROW)))   &kp LA(LC(LG(RIGHT)))  &kp LA(LC(LG(MINUS)))
-                                                    &none              &none              &none                &kp LS(RET)                   &kp LA(DELETE)        &kp LA(BACKSPACE)
+                                                    &none              &none              &none                &kp LS(RET)                   &kp LA(BACKSPACE)     &kp LA(DELETE)
             >;
         };
 
