@@ -14,7 +14,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "AUTOSHIFT_HOLD_TAP";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <180>;
             bindings = <&shifted>, <&kp>;
 
             flavor = "tap-preferred";
@@ -385,18 +385,18 @@
 
         default_layer {
             bindings = <
-&kp LALT   &as Q  &as W  &as F                &as P            &as B                &s_zett          &as L          &as U                &as Y  &o_umlaut 0 0  &kp RALT
-&kp LCTRL  &as A  &as R  &as S                &as T            &as G                &as M            &as N          &as E                &as I  &as O          &kp RCTRL
-&kp LCMD   &as Z  &as X  &as C                &as D            &as V                &a_umlaut 0 0    &as H          &as J                &as K  &u_umlaut 0 0  &kp RCMD
-                         &th_kp_kp LSHFT ESC  &th_kp_mo 3 TAB  &th_kp_mo 2 SPACE    &th_kp_mo 1 RET  &kp BACKSPACE  &th_kp_kp RSHFT DEL
+&kp LALT   &as Q  &as W  &as F                &as P    &as B                &s_zett          &as L                  &as U                &as Y  &o_umlaut 0 0  &kp RALT
+&kp LCTRL  &as A  &as R  &as S                &as T    &as G                &as M            &as N                  &as E                &as I  &as O          &kp RCTRL
+&kp LCMD   &as Z  &as X  &as C                &as D    &as V                &a_umlaut 0 0    &as H                  &as J                &as K  &u_umlaut 0 0  &kp RCMD
+                         &th_kp_kp LSHFT ESC  &kp TAB  &th_kp_mo 2 SPACE    &th_kp_mo 1 RET  &th_kp_mo 3 BACKSPACE  &th_kp_kp RSHFT DEL
             >;
         };
 
         layer_7 {
             bindings = <
-&none  &th_fat_arrow 0 EQUAL  &kp GRAVE          &kp EXCLAMATION  &kp QUESTION  &kp CARET      &kp DOLLAR    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE             &kp RIGHT_BRACE    &none
-&none  &th_kp_kp TILDE MINUS  &kp SINGLE_QUOTE   &kp COMMA        &kp DOT       &kp HASH       &kp ASTERISK  &kp AT                &kp AMPERSAND          &th_kp_kp BACKSLASH SLASH  &kp PIPE           &none
-&none  &kp UNDERSCORE         &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp COLON     &kp PERCENT    &kp PLUS      &kp LT                &th_thin_arrow 0 GT    &kp LEFT_BRACKET           &kp RIGHT_BRACKET  &none
+&none  &th_fat_arrow 0 EQUAL  &kp GRAVE          &kp EXCLAMATION  &kp QUESTION  &kp CARET      &kp DOLLAR    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LT                     &th_thin_arrow 0 GT  &none
+&none  &th_kp_kp TILDE MINUS  &kp SINGLE_QUOTE   &kp COMMA        &kp DOT       &kp HASH       &kp ASTERISK  &kp AT                &kp AMPERSAND          &th_kp_kp BACKSLASH SLASH  &kp PIPE             &none
+&none  &kp UNDERSCORE         &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp COLON     &kp PERCENT    &kp PLUS      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_BRACKET           &kp RIGHT_BRACKET    &none
                                                  &caps_word       &kp LS(TAB)   &trans         &none         &none                 &none
             >;
         };
