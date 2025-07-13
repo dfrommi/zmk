@@ -418,41 +418,5 @@
                                 &none      &none  &none        &none  &none               &none
             >;
         };
-
-        numbers {
-            bindings = <
-&none  &kp TILDE       &kp GRAVE          &kp EXCLAMATION  &kp QUESTION  &kp ASTERISK    &none   &kp N7  &kp N8  &kp N9  &none   &none
-&none  &kp MINUS       &kp SINGLE_QUOTE   &kp COMMA        &kp DOT       &kp SLASH       &kp N0  &kp N4  &kp N5  &kp N6  &kp N0  &none
-&none  &kp UNDERSCORE  &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp COLON     &kp PLUS        &none   &kp N1  &kp N2  &kp N3  &none   &none
-                                          &caps_word       &kp LS(TAB)   &trans          &none   &none   &none
-            >;
-        };
-
-        symbols {
-            bindings = <
-&none  &none  &none  &none  &none  &none    &kp HASH       &th_braces 0 LEFT_BRACE       &th_square_brackets 0 LEFT_BRACKET  &th_brackets 0 LT    &kp CARET              &none
-&none  &none  &none  &none  &none  &none    &kp AMPS       &th_paren 0 LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS               &kp AT               &th_fat_arrow 0 EQUAL  &kp PERCENT
-&none  &none  &none  &none  &none  &none    &kp PIPE       &kp RIGHT_BRACE               &kp RIGHT_BRACKET                   &th_thin_arrow 0 GT  &kp DOLLAR             &none
-                     &none  &none  &none    &kp LS(ENTER)  &kp LA(DELETE)                &kp LA(BACKSPACE)
-            >;
-        };
-
-        system {
-            bindings = <
-&bt BT_SEL 0  &kp LG(LC(LA(LS(BACKSLASH))))  &none         &kp C_BRI_DN                       &kp C_BRI_UP                            &none       &none  &none  &none  &none  &none  &none
-&bt BT_SEL 1  &kp C_PREV                     &kp C_VOL_DN  &kp C_VOL_UP                       &kp C_NEXT                              &kp C_PP    &none  &none  &none  &none  &none  &none
-&none         &none                          &none         &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &none       &none  &none  &none  &none  &none  &none
-                                                           &none                              &none                                   &none       &none  &none  &none
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans             &trans                              &trans                   &kp HASH                      &kp ASTRK    &trans      &kp AMPS               &kp PERCENT            &trans             &trans               &trans
-&trans  &th_brackets 0 LT  &th_square_brackets 0 LEFT_BRACKET  &th_braces 0 LEFT_BRACE  &th_paren 0 LEFT_PARENTHESIS  &kp CARET    &kp DOLLAR  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &th_thin_arrow 0 GT  &trans
-&trans  &trans             &trans                              &trans                   &trans                        &trans       &trans      &kp AT                 &th_fat_arrow 0 EQUAL  &kp PIPE           &kp BACKSLASH        &trans
-                                                               &trans                   &trans                        &trans       &trans      &trans                 &trans
-            >;
-        };
     };
 };
