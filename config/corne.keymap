@@ -414,7 +414,7 @@
             >;
         };
 
-        layer_7 {
+        symbol {
             bindings = <
 &none  &th_fat_arrow 0 EQUAL  &kp GRAVE          &kp EXCLAMATION  &kp QUESTION  &kp CARET      &kp DOLLAR    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LT                     &th_thin_arrow 0 GT  &none
 &none  &th_kp_kp TILDE MINUS  &kp SINGLE_QUOTE   &kp COMMA        &kp DOT       &kp HASH       &kp ASTERISK  &kp AT                &kp AMPERSAND          &th_kp_kp BACKSLASH SLASH  &kp PIPE             &none
@@ -432,7 +432,7 @@
             >;
         };
 
-        button {
+        nav {
             bindings = <
 &none  &bt BT_SEL 0  &none  &none  &none  &none    &none  &none               &none           &none         &none          &none
 &none  &none         &none  &none  &none  &none    &none  &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &none
