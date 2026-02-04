@@ -416,9 +416,9 @@
 
         symbol {
             bindings = <
-&none  &th_fat_arrow 0 EQUAL  &kp GRAVE          &kp EXCLAMATION  &kp QUESTION  &kp CARET    &kp DOLLAR    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPERSAND              &kp PERCENT          &none
-&none  &th_kp_kp TILDE MINUS  &kp SINGLE_QUOTE   &kp COMMA        &kp DOT       &kp AT       &kp PLUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LT                     &th_thin_arrow 0 GT  &none
-&none  &kp UNDERSCORE         &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp COLON     &kp HASH     &kp ASTERISK  &kp LEFT_BRACE        &kp RIGHT_BRACE        &th_kp_kp BACKSLASH SLASH  &kp PIPE             &none
+&none  &kp UNDERSCORE         &kp GRAVE          &kp EXCLAMATION  &kp QUESTION  &kp CARET    &kp DOLLAR    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE                   &kp PERCENT          &none
+&none  &th_kp_kp TILDE MINUS  &kp SINGLE_QUOTE   &kp COMMA        &kp DOT       &kp AT       &kp PLUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &th_kp_kp BACKSLASH SLASH  &kp AMPERSAND        &none
+&none  &th_fat_arrow 0 EQUAL  &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp COLON     &kp HASH     &kp ASTERISK  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LT                     &th_thin_arrow 0 GT  &none
                                                  &none            &kp LS(TAB)   &trans       &none         &none                 &none
             >;
         };
