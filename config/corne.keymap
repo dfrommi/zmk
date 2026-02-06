@@ -410,6 +410,30 @@
             key-positions = <22 34>;
             layers = <0>;
         };
+
+        Combo_paren {
+            bindings = <&paren>;
+            key-positions = <19 20>;
+            layers = <1>;
+        };
+
+        Combo_braces {
+            bindings = <&braces>;
+            key-positions = <31 32>;
+            layers = <1>;
+        };
+
+        Combo_square_brackets {
+            bindings = <&braces>;
+            key-positions = <7 8>;
+            layers = <1>;
+        };
+
+        Combo_brackets {
+            bindings = <&brackets>;
+            key-positions = <34 33>;
+            layers = <1>;
+        };
     };
 
     keymap {
