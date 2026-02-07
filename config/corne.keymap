@@ -14,7 +14,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "AUTOSHIFT_HOLD_TAP";
             #binding-cells = <2>;
-            tapping-term-ms = <120>;
+            tapping-term-ms = <140>;
             bindings = <&shifted>, <&kp>;
 
             flavor = "tap-preferred";
@@ -107,7 +107,7 @@
             bindings = <&a_upper_umlaut>, <&a_lower_umlaut>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <120>;
+            tapping-term-ms = <140>;
         };
 
         u_umlaut: u_umlaut {
@@ -116,7 +116,7 @@
             bindings = <&u_upper_umlaut>, <&u_lower_umlaut>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <120>;
+            tapping-term-ms = <140>;
         };
 
         o_umlaut: o_umlaut {
@@ -125,7 +125,7 @@
             bindings = <&o_upper_umlaut>, <&o_lower_umlaut>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <120>;
+            tapping-term-ms = <140>;
         };
 
         th_kp_kp: th_kp_kp {
